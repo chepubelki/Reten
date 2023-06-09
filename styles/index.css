@@ -251,6 +251,10 @@
       width: 500px;
       bottom: -450px;
    }
+
+   .services-card__img-wrapper img {
+      margin-right: 0;
+  }
 }
 
 @media (max-width: 864px) {}

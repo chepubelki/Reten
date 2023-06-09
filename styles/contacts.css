@@ -129,14 +129,14 @@
 }
 
 .invalid {
-   border: 1px solid #FFFFFF !important;
-   color: #FFFFFF !important;
+   border: 1px solid red !important;
+   color: red !important;
 }
 
 .name-input-errorMessage,
 .email-input-errorMessage,
 .subject-input-errorMessage {
-   color: #FFFFFF;
+   color: red;
 }
 
 .active {
