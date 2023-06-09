@@ -1,0 +1,190 @@
+@import './style.css';
+
+.nav {
+   color: #000000 !important;
+}
+
+.hamb {
+   background: #FF5100;
+}
+
+.hamb-line::before {
+   top: 6px;
+   left: calc(50% - (8px / 2));
+   background: #FFF;
+}
+
+.hamb-line::after {
+   top: 0px;
+   left: calc(50% - (8px / 2));
+   background: #FFF;
+}
+
+.input {
+   background: #F1F0F4;
+   border-radius: 12px;
+   color: #000000;
+}
+
+::-webkit-input-placeholder {
+   color: #000000;
+}
+
+:-moz-placeholder {
+   color: #000000;
+}
+
+::-moz-placeholder {
+   color: #000000;
+}
+
+:-ms-input-placeholder {
+   color: #000000;
+}
+
+.input__btn {
+   background: #FF5100;
+   color: #F1F0F4;
+   padding: 12px 42px;
+}
+
+.header__btn {
+   background: #FF5100;
+   color: #FFFFFF;
+}
+
+.input__btn:hover,
+.header__btn:hover {
+   background: inherit;
+   border: 1px solid #FF5100;
+   color: #FF5100;
+}
+
+/* ----------------------------------------------------------- */
+
+.letsWork {
+   padding: 188px 0 40px;
+}
+
+.letsWork__inner {}
+
+.letsWork__title {
+   margin-bottom: 72px;
+   max-width: 811px;
+}
+
+.letsWork__content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.letsWork__info {
+   max-width: 466px;
+   margin-right: 36px;
+}
+
+.letsWork-info__desc {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 28px;
+   margin-bottom: 84px;
+}
+
+
+.letsWork-info__contacts {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+   opacity: 0.5;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.letsWork-info__address {}
+
+.letsWork-info__linkedin {}
+
+.letsWork-info__link {}
+
+.letsWork-info__email {}
+
+.letsWork__form {}
+
+.footer__content {
+   text-align: center;
+   padding: 44px 0;
+}
+
+.footer-content__text {
+   margin: 0 auto;
+}
+
+.footer__title {
+   max-width: 880px;
+}
+
+.footer__content {
+   margin: 0;
+}
+
+.invalid {
+   border: 1px solid #FFFFFF !important;
+   color: #FFFFFF !important;
+}
+
+.name-input-errorMessage,
+.email-input-errorMessage,
+.subject-input-errorMessage {
+   color: #FFFFFF;
+}
+
+.active {
+   background: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+   .letsWork__content {
+      flex-direction: column-reverse;
+   }
+
+   .letsWork__form {
+      margin: 0 0 48px;
+   }
+
+   .letsWork__title {
+      margin-bottom: 32px;
+   }
+}
+
+@media (max-width: 768px) {
+   .letsWork {
+      padding: 100px 0 32px;
+   }
+
+   .input__btn {
+      padding: 7px 16px;
+   }
+
+   .letsWork__info {
+      margin-right: 0;
+   }
+
+   .letsWork-info__desc {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   .letsWork-info__contacts {
+      gap: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+   }
+}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 425px) {}

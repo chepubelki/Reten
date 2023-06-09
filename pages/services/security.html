@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>IT Security</title>
+   <link rel="icon" type="image/x-icon" href="../../images/favicon.svg">
+   <link rel="stylesheet" href="../../styles/sections.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js" defer></script>
+   <script src="../../js/header.js" defer></script>
+   <script src="../../js/swiper.js" defer></script>
+   <script src="../../js/index.js" defer></script>
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div class="logo__wrap">
+               <a href="../../index.html">
+                  <img class="header__logo" src="../../images/header-logo.svg" alt="logo">
+                  <img class="header__logo-mobile" src="../../images/header-logo-mobile.svg" alt="logo">
+               </a>
+            </div>
+            <nav class="nav">
+               <ul class="nav__menu">
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="../../index.html">Home</a>
+                  </li>
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="../about.html">About us</a>
+                  </li>
+                  <li class="nav__list dropdown">
+                     <a class="nav__list-link" href="../services.html">Services</a>
+                     <button class="dropbtn"><svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.375 0.8125L6 5.1875L1.625 0.8125" stroke="white" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                     </button>
+                     <div class="dropdown-content">
+                        <a class="dropdown-link" href="../services/maintenance.html">
+                           Software Maintenance
+                           <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="../services/quaility.html">
+                           Quality Assurance Services
+                           <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="../services/integration.html">
+                           Software Integration Services
+                           <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg" alt="icon">
+                        </a>
+                        <a class="dropdown-link" href="../services/security.html"> IT Security
+                           <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg" alt="icon">
+                        </a>
+                     </div>
+                  </li>
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="../contacts.html">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__links">
+               <a href="../contacts.html" class="header__btn">Contact Us</a>
+            </div>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <div class="navbar">
+               <div class="container">
+                  <div class="navbar__inner">
+                     <div class="navbar-header">
+                        <a class="header-logo-link" href="../../index.html">
+                           <img class="header-logo" src="../../images/header-logo-mobile.svg" alt="icon">
+                        </a>
+
+                     </div>
+                     <div class="navbar-content">
+                        <div class="navbar-content-links">
+                           <a class="navbar-content-link" href="../../index.html">Home</a>
+                           <a class="navbar-content-link" href="../about.html">About us</a>
+                           <div class="dropdown">
+                              <a class="navbar-content-link" href="../services.html">Services</a>
+                              <button class="dropbtn"><svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.375 0.8125L6 5.1875L1.625 0.8125" stroke="white" stroke-width="1.5"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <div class="dropdown-content">
+                                 <a class="dropdown-link" href="../services/maintenance.html">
+                                    Software Maintenance
+                                    <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg"
+                                       alt="icon">
+                                 </a>
+                                 <a class="dropdown-link" href="../services/quaility.html">
+                                    Quality Assurance Services
+                                    <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg"
+                                       alt="icon">
+                                 </a>
+                                 <a class="dropdown-link" href="../services/integration.html">
+                                    Software Integration Services
+                                    <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg"
+                                       alt="icon">
+                                 </a>
+                                 <a class="dropdown-link" href="../services/security.html"> IT Security
+                                    <img class="dropdown-arrow-right" src="../../images/dropdown-arrow-right.svg"
+                                       alt="icon">
+                                 </a>
+                              </div>
+                           </div>
+                           <a class="navbar-content-link" href="../contacts.html">Contacts</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="navbar-footer__wrapper">
+                  <div class="container">
+                     <div class="navbar-footer__inner">
+                        <div class="navbar-footer__card-contacts with-bg">
+                           <p class="footer-card-c__title">Let’s talk</p>
+                           <a class="footer-card__link" href="mailto:info@techn1nja.com">info@techn1nja.com</a>
+                           <a class="footer-card__link"
+                              href="https://www.linkedin.com/company/tech-n1nja/">Linkedin</a>
+                           <img class="footer__card-img bg-img" src="../../images/footer-card-ninja-icon.svg"
+                              alt="icon">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </header>
+
+   <div class="main with-bg">
+      <div class="container">
+         <div class="main__inner">
+            <h1 class="main__title subtitle">IT Security</h1>
+            <div class="main__content">
+               <div class="main-content__card">
+                  <img class="main-content-card__img" src="../../images/sections-img-4.svg" alt="image">
+               </div>
+               <div class="main-content__text">
+                  <p class="main-content__title">An integral part of any secure system should be the identification of
+                     users - regardless of location, type of device they use, or application.</p>
+                  <p class="main-content__desc desc">To obtain optimal results in a large infrastructure, you need to
+                     optimally select and integrate several products with each other, allocating their own area of
+                     responsibility to each of them and bringing the results of their work into a single whole. Such an
+                     integrated approach will not only maximize the reliability and quality of operation of individual
+                     elements and the entire IT infrastructure but also prevent possible failures in the operation of
+                     business-critical IT systems and eliminate them before they actually occur
+                  </p>
+                  <a class=".main-content__btn btn" href="../contacts.html">Contact us</a>
+               </div>
+            </div>
+            <p class="main__heading">We have identified 4 main areas for building information security of an enterprise:
+            </p>
+            <div class="main__cards">
+               <div class="main__card">
+                  <p class="main-card-number">01</p>
+                  <div class="main-card__text">Basic network perimeter and remote access security</div>
+               </div>
+               <div class="main__card">
+                  <p class="main-card-number">02</p>
+                  <div class="main-card__text">Organization of effective access control systems</div>
+               </div>
+               <div class="main__card">
+                  <p class="main-card-number">03</p>
+                  <div class="main-card__text">Reducing risks and minimizing losses</div>
+               </div>
+               <div class="main__card">
+                  <p class="main-card-number">04</p>
+                  <div class="main-card__text">Monitoring of events of cybersecurity systems</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="ourServices">
+      <div class="container">
+         <div class="ourServices__inner">
+            <div class="ourServices__top">
+               <h2 class="ourServices__title heading">Our services</h2>
+               <div class="ourServices__card-scroll with-bg">
+                  <div class="ourServices-scroll-btn-prev swiper-button-prev"><img src="../../images/arrow-left.svg"
+                        alt="icon"></div>
+                  <div class="ourServices-scroll-btn-next swiper-button-next"><img src="../../images/arrow-right.svg"
+                        alt="icon"></div>
+               </div>
+            </div>
+            <div class="ourServices-card__wrapper  swiper mySwiper">
+               <div class="ourServices-card__inner swiper-wrapper">
+                  <div class="ourServices__card with-bg  swiper-slide">
+                     <p class="ourServices-card__title">Software Maintenance
+                        and IT Consulting Services</p>
+                     <p class="ourServices-card__desc subdesc">Providing software maintenance and IT consulting services
+                        to help
+                        businesses improve and maintain their software systems and IT infrastructure.</p>
+                     <a class="ourServices-card__btn btn" href="./maintenance.html">Read more</a>
+                     <img class="ourServices-card__img bg-img" src="../../images/ourServices-card-icon-1.svg"
+                        alt="icon">
+                  </div>
+                  <div class="ourServices__card with-bg swiper-slide">
+                     <p class="ourServices-card__title">Quality Assurance
+                        Services</p>
+                     <p class="ourServices-card__desc subdesc">Quality assurance services to ensure that software,
+                        applications,
+                        and systems meet the desired quality standards and function as intended.</p>
+                     <a class="ourServices-card__btn btn" href="./quaility.html">Read more</a>
+                     <img class="ourServices-card__img bg-img" src="../../images/ourServices-card-icon-2.svg"
+                        alt="icon">
+                  </div>
+                  <div class="ourServices__card with-bg swiper-slide">
+                     <p class="ourServices-card__title">Software Integration
+                        Services</p>
+                     <p class="ourServices-card__desc subdesc">Software integration services to help businesses
+                        streamline their
+                        software systems by integrating different applications and systems to work together seamlessly.
+                     </p>
+                     <a class="ourServices-card__btn btn" href="./integration.html">Read more</a>
+                     <img class="ourServices-card__img bg-img" src="../../images/ourServices-card-icon-3.svg"
+                        alt="icon">
+                  </div>
+                  <div class="ourServices__card with-bg swiper-slide">
+                     <p class="ourServices-card__title">IT Security</p>
+                     <p class="ourServices-card__desc subdesc">IT security services to protect businesses from potential
+                        security
+                        threats and breaches by implementing and managing security measures such as firewalls, antivirus
+                        software, and access controls.</p>
+                     <a class="ourServices-card__btn btn" href="./security.html">Read more</a>
+                     <img class="ourServices-card__img bg-img" src="../../images/ourServices-card-icon-4.svg"
+                        alt="icon">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <div class="footer__content">
+               <div class="footer__card-contacts with-bg">
+                  <p class="footer-card-c__title">Let’s talk</p>
+                  <a class="footer-card__link" href="mailto:info@techn1nja.com">info@techn1nja.com</a>
+                  <a class="footer-card__link" href="https://www.linkedin.com/company/tech-n1nja/">Linkedin</a>
+                  <img class="footer__card-img bg-img" src="../../images/footer-card-ninja-icon.svg" alt="icon">
+               </div>
+               <div class="footer__card">
+                  <p class="footer-card__title">
+                     Subscribe to our newsletter
+                     to stay in touch with the latest
+                  </p>
+                  <form class="footer-card__form" id="form-footer" action="submit">
+                     <div class="input__wrap">
+                        <input class="footer-card-sendEmail input" type="email" placeholder="Your mail">
+                     </div>
+                     <button class="footer-card__btn btn" type="submit">Send</button>
+                  </form>
+                  <p class="form-card__success-message desc">You have successfully subscribed to the news</p>
+               </div>
+            </div>
+            <div class="footer__bottom">
+               <div class="footer-bottom__menu">
+                  <a class="footer-menu__link" href="../index.html">Home</a>
+                  <a class="footer-menu__link" href="./about.html">About us</a>
+                  <a class="footer-menu__link" href="./services.html">Services</a>
+                  <a class="footer-menu__link" href="./contacts.html">Contact us</a>
+               </div>
+               <div class="footer-bottom__info">
+                  <p class="footer__info-text">
+                     <span class="footer-info__a">©</span> 2023 TECH N1NJA
+                  </p>
+                  <a class="footer__info-pp underline" href="./PP.html">
+                     Privacy Policy
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contacts</title>
+   <link rel="icon" type="image/x-icon" href="../images/favicon-reten.svg">
+   <link rel="stylesheet" href="../styles/contacts.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js" defer></script>
+   <script src="../js/header.js" defer></script>
+   <script src="../js/swiper.js" defer></script>
+   <script src="../js/menuLinks.js" defer></script>
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div class="logo__wrap">
+               <a href="../index.html">
+                  <img class="header__logo" src="../images/header__logo-orange.svg" alt="logo">
+               </a>
+            </div>
+            <nav class="nav">
+               <ul class="nav__menu">
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="../index.html#about">About us</a>
+                  </li>
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="../index.html#feature">Feature</a>
+                  </li>
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="../index.html#services">Services</a>
+                  </li>
+                  <li class="nav__list">
+                     <a class="nav__list-link" href="./contacts.html">Join us</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__links">
+               <a href="../pages/contacts.html" class="header__btn btn">Contact Us</a>
+            </div>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
+            <div class="navbar">
+               <div class="container">
+                  <div class="navbar__inner">
+                     <div class="navbar-header">
+                        <a class="header__logo" href="../index.html">
+                           <img class="header-logo" src="../images/header__logo.svg" alt="icon">
+                        </a>
+                        <a href="../pages/contacts.html" class="header__btn btn">Contact Us</a>
+                     </div>
+                     <div class="navbar-content">
+                        <div class="navbar-content-links">
+                           <a class="navbar-content-link" href="../index.html#about">About us</a>
+                           <a class="navbar-content-link" href="../index.html#feature">Feature</a>
+                           <a class="navbar-content-link" href="../index.html#services">Services</a>
+                           <a class="navbar-content-link" href="./contacts.html">Join us</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="navbar-footer__wrapper">
+                  <div class="container">
+                     <div class="navbar-footer__inner">
+                        <a class="navbar-footer-card__link" href="mailto:info@techn1nja.com">info@retenholding.com</a>
+                        <p class="navbar-footer-card__address">Christodoulou Chatzipavlou, 199, 4th Floor, <br>
+                           Flat/Office 4E,
+                           3036 Limassol, Cyprus </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </header>
+
+   <div class="letsWork">
+      <div class="container">
+         <div class="letsWork__inner">
+            <h2 class="letsWork__title title">Thank you for considering RETEN ENTERTAINMENT LTD</h2>
+            <div class="letsWork__content">
+               <div class="letsWork__info">
+                  <p class="letsWork-info__desc">If you have any inquiries or would like to obtain further information
+                     about the services we offer, please don't hesitate to reach out to us at:</p>
+                  <div class="letsWork-info__contacts">
+                     <a class="letsWork-info__email letsWork-info__link"
+                        href="mailto:info@retenholding.com">info@retenholding.com</a>
+                     <p class="letsWork-info__address letsWork__info">Christodoulou Chatzipavlou, 199, 4th Floor,<br>
+                        Flat/Office 4E, 3036 Limassol, Cyprus </p>
+                  </div>
+               </div>
+               <div class="letsWork__form">
+                  <form class="form__wrap">
+                     <div class="input__wrap">
+                        <div class="input__inner">
+                           <input class="form-modal__name input__name input" name="name" type="text"
+                              placeholder="Full name*" required>
+                           <div class="subdesc name-input-errorMessage">
+                              Please provide your name.
+                           </div>
+                        </div>
+                        <div class="input__inner">
+                           <input class="form-modal__email input__email input" name="email" type="email"
+                              placeholder="Email*" required>
+                           <div class="subdesc email-input-errorMessage">
+                              Please provide a valid email address.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="input-withMessage">
+                        <input class="form-modal__subject input__subject input" name="subject" type="text"
+                           placeholder="Message subject" required>
+                        <div class="subdesc subject-input-errorMessage">
+                           Please enter your message subject.
+                        </div>
+                     </div>
+                     <textarea class="form-modal__message input__message input" name="message" id="ilwgstrbu" cols="30"
+                        rows="10" placeholder="Message"></textarea>
+
+                     <div class="modal__btn-wrap">
+                        <button class="input__btn btn" type="submit">Submit</button>
+                        <div class="form__error-message main-form__title">Oops! <br> Something went wrong.</div>
+                     </div>
+                  </form>
+                  <div class="form__success-message main-contacts__title title heading">
+                     <img class="succes__icon" src="../images/succes-icon.svg" alt="icon">
+                     <br>
+                     Message sent. <br> We'll be in touch.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <div class="footer__content">
+               <div class="footer-content__text">
+                  <p class="footer__title subtitle">We look forward to hearing from you and helping you take your
+                     business to the next level.</p>
+               </div>
+            </div>
+            <div class="footer__bottom">
+               <div class="footer-bottom__content">
+                  <img class="footer__logo" src="../images/header__logo.svg" alt="logo">
+                  <div class="footer-bottom__menu">
+                     <a class="footer-menu__link" href="../index.html#about">About us</a>
+                     <a class="footer-menu__link" href="../index.html#feature">Feature</a>
+                     <a class="footer-menu__link" href="../index.html#services">Services</a>
+                     <a class="footer-menu__link" href="./pages/contacts.html">Contact us</a>
+                  </div>
+               </div>
+               <div class="footer-bottom__info">
+                  <p class="footer__info-text">
+                     ©2023 RETEN ENTERTAINMENT LTD
+                  </p>
+                  <a class="footer__info-pp underline" href="../pages/PP.html">
+                     Privacy Policy
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+<script src="../js/modal.js"></script>
+
+</html>

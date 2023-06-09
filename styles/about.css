@@ -1,0 +1,185 @@
+@import './style.css';
+
+.main {
+   padding: 190px 0 120px;
+   background: radial-gradient(117.64% 129.32% at 50% 0%, rgba(0, 0, 0, 0) 26.7%, #6633EE 62.36%, #FFFFFF 180%);
+   border-radius: 0 0 44px 44px;
+   overflow-y: hidden;
+}
+
+.main__inner {
+   display: flex;
+   flex-direction: column;
+}
+
+.main__title {}
+
+.main__desc {
+   max-width: 848px;
+   margin-bottom: 24px;
+}
+
+.main__btn {}
+
+.main__img {
+   z-index: 1;
+   right: 0;
+   bottom: 0;
+}
+
+/* --------------------------------------------------- */
+
+.aboutUs {
+   padding: 64px 0;
+}
+
+.aboutUs__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.aboutUs__title {}
+
+.aboutUs__text {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   max-width: 648px;
+}
+
+.aboutUs__desc {}
+
+/* --------------------------------------------------- */
+
+.isAbout {
+   padding: 64px 0;
+   background: radial-gradient(98.4% 99.42% at 50% -31.94%, rgba(255, 255, 255, 0.72) 0%, #6633EE 40.37%, rgba(0, 0, 0, 0) 100%);
+   border-radius: 48px 48px 0px 0px;
+}
+
+.isAbout__inner {}
+
+.isAbout__title {
+   margin-bottom: 48px;
+}
+
+.isAbout__cards {
+   padding: 16px;
+   display: flex;
+   flex-wrap: wrap;
+   background: rgba(39, 41, 55, 0.2);
+   border: 2px solid rgba(255, 255, 255, 0.2);
+   border-radius: 20px;
+   gap: 16px;
+   justify-content: space-around;
+}
+
+.isAbout__card {
+   padding: 36px 24px;
+   max-width: 240px;
+}
+
+.isAbout-card-number {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   margin-bottom: 24px;
+}
+
+.isAbout-card__text {}
+
+/* --------------------------------------------------- */
+
+.ourEmployees {
+   padding: 64px 0;
+}
+
+.ourEmployees__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.ourEmployees__title {}
+
+.ourEmployees__text {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   max-width: 648px;
+}
+
+.ourEmployees__desc {}
+
+.ourEmployees__img {
+   left: 0;
+   bottom: 0;
+}
+
+/* --------------------------------------------------- */
+
+@media (max-width: 1024px) {
+   .aboutUs__inner {
+      flex-direction: column;
+   }
+
+   .aboutUs__title {
+      margin-bottom: 28px;
+   }
+
+   .aboutUs__text {
+      gap: 24px;
+   }
+}
+
+@media (max-width: 864px) {}
+
+@media (max-width: 768px) {
+   .main {
+      padding: 132px 0 140px;
+      border-radius: 0px 0px 24px 24px;
+   }
+
+   .main__img {
+      width: 182px;
+   }
+
+   .aboutUs {
+      padding: 40px 0;
+   }
+
+   .isAbout {
+      padding: 40px 0;
+      border-radius: 24px 24px 0px 0px;
+   }
+
+   .ourEmployees {
+      padding: 40px 0;
+   }
+
+   .ourEmployees__img {
+      display: none;
+   }
+
+   .ourEmployees__inner {
+      flex-direction: column;
+      gap: 28px;
+   }
+
+   .ourEmployees__text {
+      gap: 24px;
+   }
+}
+
+@media (max-width: 550px) {
+   .isAbout__cards {
+      padding: 16px 24px;
+      justify-content: space-between;
+   }
+
+   .isAbout__card {
+      padding: 20px 0;
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 425px) {}

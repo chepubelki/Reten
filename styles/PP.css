@@ -1,0 +1,97 @@
+@import './style.css';
+
+.main {
+   padding: 168px 0 100px;
+}
+
+.main__inner {
+   display: flex;
+   flex-direction: column;
+}
+
+.hamb {
+   background: #FF5100;
+}
+
+.hamb-line::before {
+   top: 6px;
+   left: calc(50% - (8px / 2));
+   background: #FFF;
+}
+
+.hamb-line::after {
+   top: 0px;
+   left: calc(50% - (8px / 2));
+   background: #FFF;
+}
+
+.header__btn {
+   background: #FF5100;
+   color: #FFFFFF;
+}
+
+.header__btn:hover {
+   background: inherit;
+   border: 1px solid #FF5100;
+   color: #FF5100;
+}
+
+.nav {
+   color: #000000 !important;
+}
+
+/* ------------------------------------------------------------- */
+
+.main__title {
+   margin-bottom: 32px;
+}
+
+.main__desc {
+   margin-bottom: 64px;
+   max-width: 917px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+}
+
+.main__text {
+   margin-bottom: 48px;
+   max-width: 917px;
+}
+
+.main__text:last-child {
+   margin-bottom: 0;
+   max-width: 888px;
+}
+
+.main-text__title {
+   margin-bottom: 24px;
+}
+
+.main-text__desc {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+}
+
+.active {
+   background: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+   .main {
+      padding: 100px 0 32px;
+   }
+
+   .main__desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+   }
+
+   .main-text__desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+   }
+}
